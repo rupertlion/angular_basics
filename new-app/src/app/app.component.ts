@@ -20,6 +20,8 @@ export class AppComponent {
     {name: 'video two', liked: false}
  ]
 
+  isShown: boolean = false
+
   constructor() { }
 
   handleClick(){
