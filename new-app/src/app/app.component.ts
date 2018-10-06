@@ -21,10 +21,21 @@ export class AppComponent {
  ]
 
   isShown: boolean = false
+  show: boolean = false
+  selector:any = 'Show'
 
   constructor() { }
 
   handleClick(){
     console.log('Someone clicked on button on the template :-)')
+  }
+
+  toggle() {
+    this.show = !this.show;
+
+    if(this.show)  
+      this.selector = "Hide this message - it's just too dangerous...";
+    else
+      this.selector = "Show me the money!!!!!";
   }
 }
