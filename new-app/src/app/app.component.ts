@@ -5,6 +5,24 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'new-app';
+
+  video = {
+    title: 'Despacito',
+    views: 2,
+    liked: true
+  }
+
+  videos = [
+    {name: 'video one', liked: true},
+    {name: 'video two', liked: false}
+ ]
+
+  constructor() { }
+
+  handleClick(){
+    console.log('Someone clicked on button on the template :-)')
+  }
 }

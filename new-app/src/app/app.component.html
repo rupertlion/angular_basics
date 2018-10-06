@@ -6,4 +6,16 @@
 </div>
 <h2>Here are some links to help you start: </h2>
 <app-comment></app-comment>
+<button (click)="handleClick()">Console log me</button>
+<p>Video title: {{video.title}}</p>
+<p>Views: {{video.views}}</p>
+<p>Liked: {{video.liked}}</p>
+<p>Video name: {{video.name}}</p>
+<input [(ngModel)] = "video.name"/>
+<ul>
+<li *ngFor="let video of videos">
+  Name: {{video.name}}
+  Liked: {{video.liked}}
+</li>
+</ul>
 
